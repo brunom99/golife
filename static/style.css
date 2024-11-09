@@ -1,0 +1,85 @@
+body {
+    background-color: #2d2d2d;
+}
+
+#error {
+    color: #b64141;
+    font-weight: bold;
+    text-align: center;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+
+#buttons {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#info {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+#activity {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    margin-left: -340px;
+    margin-top: 2px;
+}
+
+#grid {
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90vh;
+    width: 90%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.grid-item {
+    border: 1px solid #1f1e1e;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    overflow: inherit;
+}
+
+.bubble {
+    border-radius: 10px;
+    margin: 2px;
+    width: 100%;
+}
+
+.bubble-common {
+    background-color: #4f4f4f;
+}
+
+.bubble-light {
+    background-color: yellow;
+}
+
+.bubble-dark {
+    background-color: black;
+}
+
+.invisible {
+    opacity: 0.2;
+
+}

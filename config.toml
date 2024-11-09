@@ -1,0 +1,27 @@
+[server]
+port = 1984
+
+[grid]
+size = 20
+seed = 0
+
+[bubble]
+proba = 0.3          # probability for each cell to have a bubble
+pool = 100          # size of total pool (for rarity)
+
+[bubbles]
+[bubbles.common]
+minSpeed = 500      # milliseconds
+maxSpeed = 5000     # milliseconds
+
+[bubbles.light]
+pool = 2
+minSpeed = 50      # milliseconds
+maxSpeed = 100     # milliseconds
+diagonal = true
+
+[bubbles.dark]
+pool = 5
+minSpeed = 100      # milliseconds
+maxSpeed = 300      # milliseconds
+diagonal = true
