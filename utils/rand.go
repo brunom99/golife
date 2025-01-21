@@ -5,6 +5,9 @@ import (
 )
 
 func RandInt(min int, max int, r ...*rand.Rand) int {
+	if max-min <= 0 {
+		return 0
+	}
 	if len(r) > 0 {
 		return r[0].Intn(max-min) + min
 	}
