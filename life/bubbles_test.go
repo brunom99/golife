@@ -58,7 +58,7 @@ func TestBubbles_Count(t *testing.T) {
 
 	// Test with an empty list
 	var emptyBubbles Bubbles
-	assert.Nil(t, emptyBubbles.Count())
+	assert.Equal(t, 0, len(emptyBubbles.Count()))
 }
 
 func TestBubbles_IsEmpty(t *testing.T) {

@@ -6,6 +6,9 @@ func (b *Bubbles) Add(bubble *Bubble) {
 	if b == nil {
 		*b = []*Bubble{}
 	}
+	if bubble == nil {
+		return
+	}
 	*b = append(*b, bubble)
 }
 
