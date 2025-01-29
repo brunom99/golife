@@ -7,14 +7,16 @@ import (
 	"github.com/BurntSushi/toml"
 )
 
+type GridConfig struct {
+	Size int
+	Seed int64
+}
+
 type Config struct {
 	Server struct {
 		Port int
 	}
-	Grid struct {
-		Size int
-		Seed int64
-	}
+	Grid   GridConfig
 	Bubble struct {
 		Proba float64
 		Pool  int
